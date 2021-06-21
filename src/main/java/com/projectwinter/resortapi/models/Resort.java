@@ -6,8 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 @Builder
 @AllArgsConstructor
@@ -16,6 +17,22 @@ import javax.persistence.Id;
 public class Resort {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idResort;
+    @GeneratedValue(strategy = IDENTITY)
+    private int idResort;
+    private String name;
+    private int liftCount;
+    private int runCount;
+    private String officialWebsite;
+    private int longestRun;
+    private int skiableAcreage;
+    private boolean terrainPark;
+    private boolean nightSkiing;
+    private int latitude;
+    private int longitud;
+    private String country;
+    private String state;
+    private String topElevation;
+    private String bottomElevation;
+    private String point;
+    private boolean open;
 }

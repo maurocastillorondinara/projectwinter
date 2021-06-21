@@ -3,7 +3,7 @@
 ## **Idea**: 
 
 ### Build a WebApp that recopile information about winterResort's around the world process that info and return an user's friendly Recap.
-
+### For now i'm focus on The Resort api and not the weather.
 **Info**:
 
  - Resort:
